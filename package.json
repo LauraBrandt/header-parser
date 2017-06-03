@@ -1,14 +1,22 @@
 {
   "name": "header-parser",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Gives the IP address, language, and operating system for the browser",
+  "main": "server.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LauraBrandt/header-parser.git"
+  },
+  "author": "Laura Brandt",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "engines": {
+    "node": "4.5.0"
   }
 }
