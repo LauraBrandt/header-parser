@@ -3,6 +3,10 @@ var app = express();
 
 var port = process.env.PORT || 8080;
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
 app.get('/api/whoami', function(req, res) {
   res.writeHead(200, { "Content-Type": "text/plain" });
   var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
